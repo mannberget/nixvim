@@ -86,11 +86,12 @@
       enable = true;
       git = {
         enable = true;
-        ignore = false;
+        ignore = true;
       };
       renderer.indentWidth = 1;
       diagnostics.enable = true;
       view.float.enable = true;
+      # view.float.quit_on_focus_loss = false;
       updateFocusedFile.enable = true;
     };
   };
