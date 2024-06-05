@@ -1,4 +1,4 @@
-{ pkgs, ... }:{
+{
   plugins = {
 
     bufferline = {
@@ -74,6 +74,7 @@
       settings.defaults = {
         file_ignore_patterns = [
           "^.git/"
+          "^.ccls-cache/"
           "^output/"
           "^target/"
           "^build/"
