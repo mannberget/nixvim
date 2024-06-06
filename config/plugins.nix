@@ -39,8 +39,6 @@
           "<leader>fo" = "format";
         };
       };
-
-
     };
 
     lsp-format.enable = true;
@@ -109,7 +107,6 @@
         toggler.line = "<leader>cc";
       };
     };
-
   };
 
   keymaps = [
