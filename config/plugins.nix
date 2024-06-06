@@ -11,10 +11,14 @@
 
     lsp = {
       enable = true;
-
       servers = {
         nil-ls.enable = true;
-        pyright.enable = true;
+        pylsp = {
+          enable = true;
+          settings = {
+            plugins.autopep8.enabled = true;
+          };
+        };
         yamlls.enable = true;
         ccls.enable = true;
       };
@@ -32,10 +36,14 @@
           "<leader>k" = "hover";
           "<leader>ca" = "code_action";
           "<leader>rn" = "rename";
+          "<leader>fo" = "format";
         };
       };
 
+
     };
+
+    lsp-format.enable = true;
 
     lspkind.enable = true;
 
@@ -63,7 +71,6 @@
       };
     };
 
-
     treesitter = {
       enable = true;
       nixGrammars = true;
@@ -71,9 +78,6 @@
 
     telescope = {
       enable = true;
-      extensions = {
-        ui-select.enable = true;
-      };
       settings.defaults = {
         file_ignore_patterns = [
           "^.git/"
@@ -85,14 +89,17 @@
       };
     };
 
+    noice.enable = true;
+
     nvim-tree = {
       enable = true;
       git.enable = true;
       git.timeout = 200;
       renderer.indentWidth = 1;
       view.float.enable = true;
-      selectPrompts = true;
+      selectPrompts = false;
       updateFocusedFile.enable = true;
+      openOnSetup = true;
     };
     
     comment = {
@@ -123,8 +130,8 @@
     {
       mode = "n";
       key = "<C-x>";
-      action = "<Cmd>BufferLineCloseOthers<CR>";
-      options.desc = "Close Other Buffers";
+      action = "<Cmd>bd<CR>";
+      options.desc = "Close Current Buffer";
     }
 
     # Telescope

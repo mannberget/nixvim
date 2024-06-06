@@ -25,7 +25,6 @@
       action = ":close<CR>";
       key = "<leader>sx";
     }
-
     
     # Misc
     {
@@ -51,6 +50,12 @@
       mode = "n";
       action = "<nop>";
       key = "q";
+    }
+    {
+      # remove highlight with esc in normal mode
+      mode = "n";
+      action = "<Cmd>noh<Cr><Esc>";
+      key = "<Esc>";
     }
   ];
 }
