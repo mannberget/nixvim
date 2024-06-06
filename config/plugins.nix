@@ -87,12 +87,12 @@
 
     nvim-tree = {
       enable = true;
-      git.enable = false;
-      # git.timeout = 200;
-      # renderer.indentWidth = 1;
+      git.enable = true;
+      git.timeout = 200;
+      renderer.indentWidth = 1;
       view.float.enable = true;
       selectPrompts = true;
-      # updateFocusedFile.enable = true;
+      updateFocusedFile.enable = true;
     };
     
     comment = {
