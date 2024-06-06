@@ -71,6 +71,9 @@
 
     telescope = {
       enable = true;
+      extensions = {
+        ui-select.enable = true;
+      };
       settings.defaults = {
         file_ignore_patterns = [
           "^.git/"
@@ -84,16 +87,22 @@
 
     nvim-tree = {
       enable = true;
-      git = {
-        enable = true;
-        ignore = true;
-      };
-      renderer.indentWidth = 1;
-      diagnostics.enable = true;
+      git.enable = false;
+      # git.timeout = 200;
+      # renderer.indentWidth = 1;
       view.float.enable = true;
-      # view.float.quit_on_focus_loss = false;
-      updateFocusedFile.enable = true;
+      selectPrompts = true;
+      # updateFocusedFile.enable = true;
     };
+    
+    comment = {
+      enable = true;
+      settings = {
+        opleader.line = "<leader>c";
+        toggler.line = "<leader>cc";
+      };
+    };
+
   };
 
   keymaps = [

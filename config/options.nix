@@ -4,7 +4,7 @@
 
 
     loaded_netrw = 1;
-    loader_netrwPlugin = 1;
+    loaded_netrwPlugin = 1;
     # no banner
     # netrw_banner = 0;
 
@@ -44,7 +44,7 @@
       cmdheight = 2;
       colorcolumn = "100";
       undofile = true;
-      updatetime = 100;
+      updatetime = 2000;
   };
 
   colorschemes = {

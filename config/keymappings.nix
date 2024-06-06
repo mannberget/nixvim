@@ -35,12 +35,6 @@
       key = "<leader>o";
     }
     {
-      # delete char without replacing register
-      mode = "n";
-      action = "_x";
-      key = "x";
-    }
-    {
       # fast scroll down
       mode = "n";
       action = "10<C-e>10j";
@@ -51,6 +45,12 @@
       mode = "n";
       action = "10<C-y>10k";
       key = "<C-k>";
+    }
+    {
+      # delete char without replacing register
+      mode = "n";
+      action = "<nop>";
+      key = "q";
     }
   ];
 }
