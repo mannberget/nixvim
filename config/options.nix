@@ -50,6 +50,10 @@
   colorschemes = {
     nord = {
       enable = true;
+      settings = {
+        italic = false;
+        borders = true;
+      };
     };
   };
 }
