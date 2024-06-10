@@ -23,6 +23,7 @@
   };
 
   opts = {
+      background = "dark";
       guicursor = "";
       number = true;
       visualbell = true;
@@ -48,12 +49,15 @@
   };
 
   colorschemes = {
-    nord = {
+    kanagawa = {
       enable = true;
-      settings = {
-        italic = false;
-        borders = true;
-      };
     };
+    # nord = {
+    #   enable = true;
+    #   settings = {
+    #     italic = false;
+    #     borders = true;
+    #   };
+    # };
   };
 }
