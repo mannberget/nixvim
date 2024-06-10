@@ -84,6 +84,31 @@
           "^target/"
           "^build/"
         ];
+        mappings = {
+          i = {
+            "<C-d>" = {
+              __raw = "require('telescope.actions').preview_scrolling_up";
+            };
+            "<C-f>" = {
+              __raw = "require('telescope.actions').preview_scrolling_down";
+            };
+            "<C-s>" = {
+              __raw = "require('telescope.actions').preview_scrolling_left";
+            };
+            "<C-g>" = {
+              __raw = "require('telescope.actions').preview_scrolling_right";
+            };
+            "<C-a>" = {
+              __raw = "require('telescope.actions').toggle_selection";
+            };
+            "<Tab>" = {
+              __raw = "require('telescope.actions').move_selection_worse";
+            };
+            "<S-Tab>" = {
+              __raw = "require('telescope.actions').move_selection_better";
+            };
+          };
+        };
       };
     };
 
