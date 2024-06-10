@@ -16,7 +16,14 @@
         pylsp = {
           enable = true;
           settings = {
-            plugins.autopep8.enabled = true;
+            plugins.black.enabled = true;
+            plugins.pycodestyle.enabled = true;
+            plugins.pycodestyle.maxLineLength = 88;
+            plugins.pyflakes.enabled = true;
+            plugins.mccabe.enabled = true;
+
+            plugins.flake8.enabled = false;
+            plugins.autopep8.enabled = false;
           };
         };
         yamlls.enable = true;
