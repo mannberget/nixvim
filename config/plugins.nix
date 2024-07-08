@@ -167,13 +167,13 @@
     {
       mode = "n";
       key = "<leader>ff";
-      action = "<cmd>lua require('telescope.builtin').find_files({hidden = true})<CR>";
+      action = "<cmd>lua require('telescope.builtin').find_files({hidden = false})<CR>";
       options.desc = "Find Files";
     }
     {
       mode = "n";
       key = "<leader>fg";
-      action = "<cmd>lua require('telescope.builtin').live_grep({hidden = true})<CR>";
+      action = "<cmd>lua require('telescope.builtin').live_grep({hidden = false})<CR>";
       options.desc = "Grep Files";
     }
     {
