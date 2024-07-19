@@ -79,6 +79,22 @@
     treesitter = {
       enable = true;
       nixGrammars = true;
+      settings.ensure_installed = [
+        "bash"
+        "c"
+        "cmake"
+        "cpp"
+        "csv"
+        "Dockerfile"
+        "html"
+        "json"
+        "latex"
+        "nix"
+        "python"
+        "rust"
+        "toml"
+        "yaml"
+      ];
     };
 
     telescope = {
