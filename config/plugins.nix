@@ -16,14 +16,14 @@
         pylsp = {
           enable = true;
           settings = {
-            plugins.black.enabled = true;
-            plugins.pycodestyle.enabled = true;
+            plugins.black.enabled = false;
+            plugins.pycodestyle.enabled = false;
             plugins.pycodestyle.maxLineLength = 88;
-            plugins.pyflakes.enabled = true;
-            plugins.mccabe.enabled = true;
+            plugins.pyflakes.enabled = false;
+            plugins.mccabe.enabled = false;
 
             plugins.flake8.enabled = false;
-            plugins.autopep8.enabled = false;
+            plugins.autopep8.enabled = true;
           };
         };
         yamlls.enable = true;
@@ -48,7 +48,7 @@
       };
     };
 
-    lsp-format.enable = true;
+    # lsp-format.enable = true;
 
     lspkind.enable = true;
 
