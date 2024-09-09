@@ -18,11 +18,11 @@
           settings = {
             plugins.black.enabled = false;
             plugins.pycodestyle.enabled = false;
-            plugins.pycodestyle.maxLineLength = 88;
+            # plugins.pycodestyle.maxLineLength = 88;
             plugins.pyflakes.enabled = false;
             plugins.mccabe.enabled = false;
 
-            plugins.flake8.enabled = false;
+            plugins.flake8.enabled = true;
             plugins.autopep8.enabled = true;
           };
         };
