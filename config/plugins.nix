@@ -27,7 +27,11 @@
           };
         };
         yamlls.enable = true;
+        jsonls.enable = true;
         ccls.enable = true;
+        # tsserver.enable = true;
+        eslint.enable = true;
+        # volar.enable = true;
       };
 
       keymaps = {
@@ -47,8 +51,6 @@
         };
       };
     };
-
-    # lsp-format.enable = true;
 
     lspkind.enable = true;
 
@@ -119,6 +121,8 @@
         };
       };
     };
+
+    typescript-tools.enable = true;
 
     noice.enable = true;
 

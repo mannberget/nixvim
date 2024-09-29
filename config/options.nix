@@ -51,6 +51,7 @@
   colorschemes = {
     kanagawa = {
       enable = true;
+      settings.transparent = true;
     };
     # nord = {
     #   enable = true;
