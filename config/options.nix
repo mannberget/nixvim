@@ -3,10 +3,10 @@
     mapleader = " ";
 
 
-    loaded_netrw = 1;
-    loaded_netrwPlugin = 1;
+    # loaded_netrw = 1;
+    # loaded_netrwPlugin = 1;
     # no banner
-    # netrw_banner = 0;
+    netrw_banner = 0;
 
     # explore is 25% of screeen
     # netrw_winsize = 25;
@@ -15,7 +15,7 @@
     # netrw_altv = 1;
 
     # tree view
-    # netrw_liststyle = 3;
+    netrw_liststyle = 3;
   };
 
   clipboard = {
@@ -51,14 +51,7 @@
   colorschemes = {
     kanagawa = {
       enable = true;
-      settings.transparent = true;
+      settings.transparent = false;
     };
-    # nord = {
-    #   enable = true;
-    #   settings = {
-    #     italic = false;
-    #     borders = true;
-    #   };
-    # };
   };
 }
