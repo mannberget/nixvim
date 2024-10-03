@@ -31,7 +31,8 @@
         ccls.enable = true;
         # tsserver.enable = true;
         eslint.enable = true;
-        # volar.enable = true;
+        volar.enable = true;
+        prismals.enable = true;
       };
 
       keymaps = {
