@@ -86,6 +86,8 @@
 
     telescope = {
       enable = true;
+      extensions.file-browser.enable = true;
+      extensions.file-browser.settings.hijack_netrw = true;
       settings.defaults = {
         file_ignore_patterns = [
           "^.git/"
@@ -126,16 +128,16 @@
 
     noice.enable = true;
 
-    nvim-tree = {
-      enable = true;
-      git.enable = true;
-      git.timeout = 200;
-      renderer.indentWidth = 1;
-      view.float.enable = true;
-      selectPrompts = false;
-      updateFocusedFile.enable = true;
-      openOnSetup = true;
-    };
+    # nvim-tree = {
+    #   enable = true;
+    #   git.enable = true;
+    #   git.timeout = 200;
+    #   renderer.indentWidth = 1;
+    #   view.float.enable = true;
+    #   selectPrompts = false;
+    #   updateFocusedFile.enable = true;
+    #   openOnSetup = true;
+    # };
     
     comment = {
       enable = true;
@@ -194,12 +196,14 @@
       options.desc = "Find Diagnostics";
     }
 
-    # Nvim Tree
     {
       mode = "n";
       key = "<leader>e";
-      action = "<cmd>lua require('nvim-tree.api').tree.toggle()<CR>";
-      options.desc = "Toggle Tree";
+      # Nvim Tree
+      # action = "<cmd>lua require('nvim-tree.api').tree.toggle()<CR>";
+      # action = "<cmd>Telescope file_browser<CR>";
+      action = "<cmd>lua require('telescope').extensions.file_browser.file_browser()<CR>";
+      options.desc = "Toggle file browserr";
     }
   ];
 }
