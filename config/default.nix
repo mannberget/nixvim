@@ -20,6 +20,7 @@
     hi SignColumn guibg=None
     hi TelescopeBorder guibg=None guifg=gray
     hi WinSeparator guifg=gray
+    hi Visual guibg=#606060
     ]])
   '';
 }
