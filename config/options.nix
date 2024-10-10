@@ -43,7 +43,7 @@
       mouse = "a";
       encoding = "utf-8";
       cmdheight = 2;
-      colorcolumn = "100";
+      # colorcolumn = "100";
       undofile = true;
       updatetime = 2000;
   };
