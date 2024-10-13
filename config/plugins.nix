@@ -26,13 +26,25 @@
             plugins.autopep8.enabled = true;
           };
         };
+
+        # Config filetypes
         yamlls.enable = true;
         jsonls.enable = true;
+
+        # C / C++
         ccls.enable = true;
-        # tsserver.enable = true;
+        
+        # JS/Vue
         eslint.enable = true;
         volar.enable = true;
-        prismals.enable = true;
+
+        # Webdev
+        gopls.enable = true;
+        templ.enable = true;
+        html.enable = true;
+        htmx.enable = true;
+        cssls.enable = true;
+
       };
 
       keymaps = {
