@@ -32,8 +32,8 @@
         jsonls.enable = true;
 
         # C / C++
-        # ccls.enable = true;
-        clangd.enable = true;
+        ccls.enable = true;
+        # clangd.enable = true;
         
         # JS/Vue
         eslint.enable = true;
